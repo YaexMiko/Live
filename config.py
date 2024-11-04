@@ -11,8 +11,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002442728284"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002400371519"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
@@ -37,7 +37,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "8108281129"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "6646")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://Yuki:aloksingh@yuki.biabo.mongodb.net/?retryWrites=true&w=majority")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority&appName=ZeroTwo")
 #your database name
 DB_NAME = os.environ.get("DB_NAME", "filesharexbot")
 
@@ -62,9 +62,9 @@ https://dashboard.shareus.io/
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "Modijiurl.com")
-# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "971a7eef7f38784d7cb5accdc2a4ad044c87e25d")
+# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e7fab6735b3f0cbbe3ccba5fd0eb10d61451e51b")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "971a7eef7f38784d7cb5accdc2a4ad044c87e25d")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e7fab6735b3f0cbbe3ccba5fd0eb10d61451e51b")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -82,9 +82,9 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/how_to_hentai/18")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "singhzerotwo@fam")
+UPI_ID = os.environ.get("UPI_ID", "Ask To Owner For Qr")
 #UPI QR CODE IMAGE
-UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "https://ibb.co/7zzRHFQ")
+UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "")
 #SCREENSHOT URL of ADMIN for verification of payments
 SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #Time and its price
@@ -93,11 +93,11 @@ PRICE1 = os.environ.get("PRICE1", "30")
 #1 Month
 PRICE2 = os.environ.get("PRICE2", "80")
 #3 Month
-PRICE3 = os.environ.get("PRICE3", "200")
+PRICE3 = os.environ.get("PRICE3", "250")
 #6 Month
-PRICE4 = os.environ.get("PRICE4", "350")
+PRICE4 = os.environ.get("PRICE4", "450")
 #1 Year
-PRICE5 = os.environ.get("PRICE5", "600")
+PRICE5 = os.environ.get("PRICE5", "800")
 
 
 
