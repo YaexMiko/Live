@@ -11,7 +11,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002461468810"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002346858399"))
 FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002454183001"))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
@@ -61,10 +61,10 @@ https://dashboard.shareus.io/
 # TRUE for yes FALSE if no 
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
-SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "inshorturl.com")
+SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortner.in")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e2b3b171baa27212f4bfaa3d64571b18d26f796e")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e2b3b171baa27212f4bfaa3d64571b18d26f796e")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "d91eafbe473fc304a5f375c9e408d16e7fc63da6")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -115,7 +115,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7749734225 6763725032 7334816122").split()):
+    for x in (os.environ.get("ADMINS", "7749734225 6763725032 7334816122 ").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
