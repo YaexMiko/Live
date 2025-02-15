@@ -64,7 +64,7 @@ USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else F
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortner.in")
 # SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e2b3b171baa27212f4bfaa3d64571b18d26f796e")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "d91eafbe473fc304a5f375c9e408d16e7fc63da6")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ad712c005fcde851b4a3a5b1ee5f96171db6ebd2")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -115,7 +115,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7749734225 6763725032 7334816122 ").split()):
+    for x in (os.environ.get("ADMINS", "5122052972 7749734225 6763725032 7334816122 ").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
