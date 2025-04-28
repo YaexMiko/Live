@@ -31,15 +31,15 @@ APP_ID = int(os.environ.get("APP_ID", "20071888"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "1c4cb9d94b23282abd9ae2a87a521b53")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002262633803"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002499492966"))
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "8108281129"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6943832981"))
 #port set to default 8080
-PORT = os.environ.get("PORT", "6246")
+PORT = os.environ.get("PORT", "6596")
 #your database url mongodb only You can use mongo atlas free cloud database
-DB_URL = os.environ.get("DB_URL", "mongodb+srv://ZeroTwo:aloksingh@zerotwo.3q3ij.mongodb.net/?retryWrites=true&w=majority&appName=ZeroTwo")
+DB_URL = os.environ.get("DB_URL", "mongodb+srv://Dam:aloksingh@cluster0.6z0hq.mongodb.net/?retryWrites=true&w=majority")
 #your database name
-DB_NAME = os.environ.get("DB_NAME", "ZeroTwo")
+DB_NAME = os.environ.get("DB_NAME", "filesharexbot")
 
 #for creating telegram thread for bot to improve performance of the bot
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
@@ -62,9 +62,9 @@ https://dashboard.shareus.io/
 USE_SHORTLINK = True if os.environ.get('USE_SHORTLINK', "TRUE") == "TRUE" else False 
 # only shareus service known rightnow rest you can test on your own
 SHORTLINK_API_URL = os.environ.get("SHORTLINK_API_URL", "shortner.in")
-# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "e2b3b171baa27212f4bfaa3d64571b18d26f796e")
+# SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "6f53c862c70eefb04d8f8d18953100d35ebc066c")
 #use this key if not working ☠️ (jokin!!)
-SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ad712c005fcde851b4a3a5b1ee5f96171db6ebd2")
+SHORTLINK_API_KEY = os.environ.get("SHORTLINK_API_KEY", "ee27e1af21f18ed5afeb62acaa0554a480f6edef")
 #add your custom time in secs for shortlink expiration.
 # 24hr = 86400
 # 12hr = 43200
@@ -82,7 +82,7 @@ TUT_VID = os.environ.get("TUT_VID","https://t.me/Tutorial_Cute_Heaven")
 #put TRUE if you want this feature
 USE_PAYMENT = True if (True if os.environ.get("USE_PAYMENT", "TRUE") == "TRUE" else False) and (USE_SHORTLINK) else False
 #UPI ID
-UPI_ID = os.environ.get("UPI_ID", "Ask To Owner For Qr")
+UPI_ID = os.environ.get("UPI_ID", "")
 #UPI QR CODE IMAGE
 UPI_IMAGE_URL = os.environ.get("UPI_IMAGE_URL", "")
 #SCREENSHOT URL of ADMIN for verification of payments
@@ -91,13 +91,13 @@ SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", f"t.me/{OWNER_TAG}")
 #7 Days
 PRICE1 = os.environ.get("PRICE1", "50")
 #1 Month
-PRICE2 = os.environ.get("PRICE2", "130")
+PRICE2 = os.environ.get("PRICE2", "120")
 #3 Month
-PRICE3 = os.environ.get("PRICE3", "250")
+PRICE3 = os.environ.get("PRICE3", "299")
 #6 Month
-PRICE4 = os.environ.get("PRICE4", "Not Available")
+PRICE4 = os.environ.get("PRICE4", "499")
 #1 Year
-PRICE5 = os.environ.get("PRICE5", "Not Available")
+PRICE5 = os.environ.get("PRICE5", "899")
 
 
 
@@ -115,7 +115,7 @@ DISABLE_CHANNEL_BUTTON = True if os.environ.get("DISABLE_CHANNEL_BUTTON", "TRUE"
 
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5122052972 7749734225 6763725032 7334816122 ").split()):
+    for x in (os.environ.get("ADMINS", "6943832981 7350721166 6616938712").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
